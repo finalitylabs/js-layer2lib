@@ -12,7 +12,9 @@ class App extends Component {
       showToast: false,
       toastText: "No text specified"
     }
-    firebase.initializeApp(credentials.CONFIG);
+    // Get config after you created your firebase project at https://console.firebase.google.com/
+    // click add firebase to existing project.
+    firebase.initializeApp(credentials.CONFIG); 
   }
 
   componentDidMount = () => {
